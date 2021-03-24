@@ -9,16 +9,85 @@ console.log('js ok!')
 
 //creando la array
 
-var lastNameList = ['Cavanni','Fabri','Trittonni','Zingaro', 'Pazienza','Dankan'];
+var lastNameList = ['cavanni','fabri','trittonni','zingaro','pazienza','dankan'];
+var position = [1,2,3,4,5,6];
+var clientLastName = prompt('What is your last name?').toLowerCase().trim();
 
-console.log(lastNameList);
 
-var clientLastName = prompt('What is your last name?');
+for (var i = 0; i < lastNameList.length; i++) {
+    console.log(position[i]);
+    console.log(lastNameList[i]);       
+ }
 
-console.log(clientLastName);
-console.log(lastNameList.push(clientLastName));
+if (lastNameList.push(clientLastName)) {
+    position = [1,2,3,4,5,6,7];
+} 
+
 console.log(lastNameList.sort());
-console.log(lastNameList.indexOf(clientLastName));
+var result;
+
+for (var i = 0; i < lastNameList.length; i++ ) {
+    result = position[i] + ' - ' + lastNameList[i];
+    console.log(result);
+}
+
+
+document.getElementById('listnames').innerHTML += '<li>' + position[i] + lastNameList[i] + '</li>';
+
+
+//forze dovrei pescare il indice della array clientLastName.
+
+// if (isNaN(clientLastName)) {
+//     console.log(lastNameList.push(clientLastName));
+//     console.log(lastNameList.sort());
+//     console.log(lastNameList.indexOf(clientLastName));
+// } else {
+//     prompt('please, insert your last name?').toLowerCase().trim();
+// }
+
+// console.log(lastNameList.push(clientLastName));
+// console.log(lastNameList[i]);
+// console.log(lastNameList.indexOf(clientLastName));
+
+// var size = 7
+// var counter = 0
+
+// do {
+//     var clientLastName = prompt('What is your last name?').toLowerCase().trim();
+// }
+// while (isNaN(clientLastName)) {
+//     lastNameList.push(clientLastName);
+//     console.log(lastNameList.sort());
+
+//     counter++
+// }
+
+
+
+
+// console.log(clientLastName);
+// console.log(lastNameList.push(clientLastName));
+// console.log(lastNameList.sort());
+// console.log(lastNameList.indexOf(clientLastName));
+
+// var numbers = [1,2,3,4,5,6]
+
+// var i = lastNameList - 1;
+
+// while (i >= 0 ) {
+//    var fusion = numbers[i] + lastNameList[i];
+//    console.log(fusion);
+//  }
+
+// var fusion = numbers + lastNameList;
+// console.log(fusion);
+
+
+
+
+
+
+
 
 // var clientLastName = '';
 
@@ -27,12 +96,12 @@ console.log(lastNameList.indexOf(clientLastName));
 //     clientLastName = prompt('What is your last name?');
 // } while (i < lastNameList.length)
 
-// for (var i = 0; i < lastNameList.length; i++) {
-//     clientLastName = prompt('What is your last name?');
-//     console.log(clientLastName);
-//     console.log(lastNameList.push(clientLastName));
-//     console.log(lastNameList.sort())
-//     console.log(lastNameList.indexOf(clientLastName))
-//     break;
-// }
+//  for (var i = 1; i < lastNameList.length - 1; i++) {
+//      clientLastName = prompt('What is your last name?');
+//      console.log(clientLastName);
+//      console.log(lastNameList.push(clientLastName));
+//      console.log(lastNameList.sort())
+//      console.log(lastNameList.indexOf(clientLastName))
+//      break;
+//  }
 

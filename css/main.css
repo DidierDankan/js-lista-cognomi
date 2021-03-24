@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    font-family: sans-serif;
+    background: dodgerblue;
+    
+}
+
+.card {
+    margin-top: 2rem;
+}
+
+#listnames {
+    margin-top: 2rem;
+    max-width: 500px;
+    margin-bottom: 2rem;
+    background: #eee;
+}
