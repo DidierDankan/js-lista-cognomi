@@ -1,4 +1,28 @@
 console.log('js ok!')
+//correzioni 
+
+
+// //list cognomi
+// var listCognomi = ['bianchi', 'neri', 'verdi', 'rosso', 'gialli']
+
+
+// //chiedere il cognomi
+
+// var userCognomi = prompt();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -23,16 +47,21 @@ if (lastNameList.push(clientLastName)) {
     position = [1,2,3,4,5,6,7];
 } 
 
+console.log(lastNameList.indexOf(clientLastName));
+
+
 console.log(lastNameList.sort());
 var result;
 
 for (var i = 0; i < lastNameList.length; i++ ) {
     result = position[i] + ' - ' + lastNameList[i];
     console.log(result);
+
 }
+console.log(lastNameList.indexOf(clientLastName) + 1);
 
 
-document.getElementById('listnames').innerHTML += '<li>' + position[i] + lastNameList[i] + '</li>';
+// document.getElementById('listnames').innerHTML += '<li>' + position[i] + lastNameList[i] + '</li>';
 
 
 //forze dovrei pescare il indice della array clientLastName.
